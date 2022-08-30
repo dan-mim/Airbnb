@@ -9,3 +9,7 @@ That is why the folder requests_html should be inspected.
 
 ## Requests_html
 The folder Requests_html gathers several technics that appear to be way more efficient in term of time optimisation.
+
+# Log_in BNB:
+For some use, it can be useful to login to a bnb account. For example to get some data about users.
+This can be done thanks to the code in the folder log_in_bnb.
