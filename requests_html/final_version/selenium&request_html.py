@@ -37,7 +37,7 @@ from requests_html import HTMLSession
 #%% Fonction pretraitement data
 # obtention des url0 : la carte de l'IDF est découpé en un certain nb de zone 
 # définies dans tab_lat_long et on scrapera les résultats de ces urls (ces carrés 1 à 1)
-def create_url0(i):
+def create_url0(j):
     """
     retourne le ie url correspondant au carré
     """
@@ -50,7 +50,7 @@ def create_url0(i):
         y_min = tab_lat_long.iloc[i].y_min
         url = f'https://www.airbnb.fr/s/homes?ne_lat={y_max}&ne_lng={x_max}&sw_lat={y_min}&sw_lng={x_min}'
         liste_url0.append(url)
-    return(liste_url0[i])
+    return(liste_url0[j])
 
 #%% Fonctions scraping
 
